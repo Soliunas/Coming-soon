@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="./css/pages/home.css">
     <link rel="stylesheet" href="./css/base/base.css">
     <link rel="stylesheet" href="./css/base/layout.css">
+    <link rel="stylesheet" href="./css/components/clock.css">
 </head>
-
 <body>
     <main>
         <section class="container bg-main">
@@ -26,7 +26,24 @@
                 <img class="logo" src="./logo.png" alt="Logo">
                 <h1 class="main-title">Coming soon</h1>
                 <p class="main-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos asperiores necessitatibus vitae harum accusantium voluptatibus odio! Sit praesentium consequuntur ipsam.</p>
-                <p id="countdown"></p>
+                <div class="clock">
+                    <div class="time">
+                        <div class="value">432</div>
+                        <div class="label">Days</div>
+                    </div>
+                    <div class="time">
+                        <div class="value">09</div>
+                        <div class="label">Hours</div>
+                    </div>
+                    <div class="time">
+                        <div class="value">37</div>
+                        <div class="label">Minutes</div>
+                    </div>
+                    <div class="time">
+                        <div class="value">39</div>
+                        <div class="label">Seconds</div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="container">
@@ -34,12 +51,33 @@
                 <div class="column">
                     <h2>About startup</h2>
                     <p>Matrox material design multi-purpose html template. It comes with huge content and background variants. Matrox is coming very soon. we are nearly there.</p>
-                    <label for="file">UX design</label>
-                    <progress id="file" value="90" max="100"> 90% </progress><br>
-                    <label for="file">Web Design</label>
-                    <progress id="file" value="86" max="100"> 86% </progress><br>
-                    <label for="file">Web Development</label>
-                    <progress id="file" value="89" max="100"> 89% </progress><br>
+                    <div class="progress-bar">
+                        <div class="top">
+                            <div class="label">UX Design</div>
+                            <div class="value">90%</div>
+                        </div>
+                        <div class="bottom">
+                            <div style="width: 90%;" class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="top">
+                            <div class="label">Web Design</div>
+                            <div class="value">86%</div>
+                        </div>
+                        <div class="bottom">
+                            <div style="width: 86%;" class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="top">
+                            <div class="label">Web Development</div>
+                            <div class="value">50%</div>
+                        </div>
+                        <div class="bottom">
+                            <div style="width: 50%;" class="progress"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="column right-column">
                     <h2>Have any questions?</h2>
@@ -52,11 +90,9 @@
                     <input type='text' name='message'/></label>
                     <input type='submit' value='submit' required='required'/>
                 </div>
-                
             </div>
         </section>
     </main>
-
     <footer class="container bg-main">
         <div class="row">
             SOCIALS
