@@ -31,7 +31,7 @@
     animation-delay: 1s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-    animation-timing-function: steps(5);
+    animation-timing-function: ease-out;
     /* animation-play-state: paused; */
 }
 /* .progress-bar:hover .progress > .bar {
