@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/base/base.css">
     <link rel="stylesheet" href="./css/base/layout.css">
     <link rel="stylesheet" href="./css/components/clock.css">
+    <link rel="stylesheet" href="./css/components/progress-bar.css">
 </head>
 <body>
     <main>
@@ -57,7 +58,9 @@
                             <div class="value">90%</div>
                         </div>
                         <div class="bottom">
-                            <div style="width: 90%;" class="progress"></div>
+                            <div class="progress">
+                                <div class="bar"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="progress-bar">
@@ -66,29 +69,34 @@
                             <div class="value">86%</div>
                         </div>
                         <div class="bottom">
-                            <div style="width: 86%;" class="progress"></div>
+                            <div style="width: 86%;" class="progress">
+                                <div class="bar"></div>
+                            </div>
                         </div>
-                    </div>
+                    </div>   
                     <div class="progress-bar">
                         <div class="top">
                             <div class="label">Web Development</div>
                             <div class="value">50%</div>
                         </div>
                         <div class="bottom">
-                            <div style="width: 50%;" class="progress"></div>
+                            <div style="width: 50%;" class="progress">
+                                <div class="bar"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
                 <div class="column right-column">
                     <h2>Have any questions?</h2>
                     <p>You can use contact from below or contact us via e-mail at: brendytheme.net@gmail.com. Contact form is fully working and very easy to customize.<br>
-                    <label>Name<br>
-                    <input type='text' name='name'/></label><br>
-                    <label>Email<br>
-                    <input type='text' name='email'/></label><br>
-                    <label>Message<br>
-                    <input type='text' name='message'/></label>
-                    <input type='submit' value='submit' required='required'/>
+                    <form class="form">
+                       <label>Name</label>
+                       <input type='text' name='name'/>
+                       <label>Email</label>
+                       <input type='text' name='email'/>
+                       <label>Message</label>
+                       <input type='text' name='message'/>
+                       <input type='submit' value='submit' required='required'/>
+                    </form>
                 </div>
             </div>
         </section>
